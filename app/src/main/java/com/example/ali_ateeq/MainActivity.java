@@ -33,9 +33,6 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_history);
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_other);
 
-
-
-
     }
 
 
