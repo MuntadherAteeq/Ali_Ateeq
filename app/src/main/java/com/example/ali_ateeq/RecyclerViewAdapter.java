@@ -2,6 +2,7 @@ package com.example.ali_ateeq;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
@@ -14,6 +15,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
+
+import org.w3c.dom.Text;
 
 import java.util.List;
 
@@ -43,6 +46,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         viewHolder.item.setOnClickListener((View v) -> {
             makeText(mContext, "Item Click : " + viewHolder.getAdapterPosition(), Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(mContext, Transactions.class);
+            mContext.startActivity(intent);
+
         });
 
         viewHolder.image.setOnClickListener((View v) -> {
