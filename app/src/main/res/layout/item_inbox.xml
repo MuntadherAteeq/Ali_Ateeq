@@ -6,7 +6,9 @@
     android:layout_height="wrap_content"
     android:padding="10dp"
     android:background="@color/backgroundFragment"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:id="@+id/item_List"
+    >
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"

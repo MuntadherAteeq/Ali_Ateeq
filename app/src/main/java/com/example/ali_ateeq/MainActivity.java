@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tabLayout = (TabLayout)findViewById(R.id.tablayout_id);
-        viewPager = (ViewPager)findViewById(R.id.viewpager_id);
+        tabLayout = findViewById(R.id.tablayout_id);
+        viewPager = findViewById(R.id.viewpager_id);
         adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
         // Add fragment Here
@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_inbox);
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_history);
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_other);
+
+
 
     }
 
