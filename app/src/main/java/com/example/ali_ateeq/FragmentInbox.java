@@ -1,5 +1,6 @@
 package com.example.ali_ateeq;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,13 +12,17 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class FragmentInbox extends Fragment {
     View v;
+
     private RecyclerView myRecyclerView;
-    private List<Inbox> inboxList;
+    public static List<Inbox> inboxList;
+    private FloatingActionButton add_button;
 
 
     public FragmentInbox() {
@@ -37,13 +42,8 @@ public class FragmentInbox extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         inboxList = new ArrayList<>();
-        inboxList.add(new Inbox("Ali","36860701",1));
-        inboxList.add(new Inbox("Jassim","36860701",1));
-        inboxList.add(new Inbox("Hassin","36860701",1));
-        inboxList.add(new Inbox("Mahmood","36860701",1));
-        inboxList.add(new Inbox("ATEEQ","36860701",1));
-
     }
+
+
 }

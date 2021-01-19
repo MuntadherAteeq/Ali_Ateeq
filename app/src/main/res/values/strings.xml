@@ -4,4 +4,6 @@
     <string name="my_name_is_the_person">My name is the person</string>
     <string name="hello_world">Hello World</string>
     <string name="todo">TODO</string>
+    <string name="add">add_new_deal</string>
+    <string name="name">Name</string>
 </resources>

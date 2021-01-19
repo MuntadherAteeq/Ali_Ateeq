@@ -8,8 +8,5 @@
     android:orientation="vertical"
     android:background="@color/backgroundFragment"
 
-    >
 
-
-
-</LinearLayout>
+    />
